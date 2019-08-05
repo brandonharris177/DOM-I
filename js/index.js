@@ -1,4 +1,4 @@
-const siteContent = {
+const greatIdeas = {
   "nav": {
     "nav-item-1": "Services",
     "nav-item-2": "Product",
@@ -38,5 +38,28 @@ const siteContent = {
 };
 
 // Example: Update the img src for the logo
-let logo = document.getElementById("logo-img");
-logo.setAttribute('src', siteContent["nav"]["img-src"])
+// let logo = document.getElementById("logo-img");
+// logo.setAttribute('src', greatIdeas["nav"]["img-src"])
+
+const nav = document.querySelectorAll("nav a");
+nav[0].textContent = "Services";
+nav[1].textContent = "Product";
+nav[2].textContent = "Vision";
+nav[3].textContent = "Features";
+nav[4].textContent = "About";
+nav[5].textContent = "Contact";
+
+const logo = document.querySelector("#logo-img");
+logo.src = "img/logo.png"
+
+const ctaH1 = document.querySelector(".cta h1");
+ctaH1.textContent = "DOM Is Awsome";
+
+const ctaButton = document.querySelector(".cta button");
+ctaButton.textContent = "Get Started";
+
+const ctaImg =  document.querySelector("#cta-img");
+ctaImg.src = "img/header-img.png";
+
+const topContentH4 = document.querySelector(".top-content h4")
+topContentH4.textContent = "Features";
