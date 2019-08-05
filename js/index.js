@@ -94,3 +94,20 @@ contactinfo.forEach(
 
 const copyright = document.querySelector(`footer p`);
 copyright.textContent = greatIdeas[`footer`][`copyright`];
+
+nav.forEach(
+  (element, index) =>
+  element.style.color = 'green'
+  );
+
+const last = document.createElement(`a`);
+
+last.textContent = `Last`;
+
+document.querySelector(`nav`).appendChild(last);
+
+const first = document.createElement(`a`);
+
+first.textContent = `First`
+
+document.querySelector(`nav`).prepend(first);
