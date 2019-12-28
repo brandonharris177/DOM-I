@@ -111,3 +111,5 @@ const first = document.createElement(`a`);
 first.textContent = `First`
 
 document.querySelector(`nav`).prepend(first);
+
+mainHeader.innerText = greatIdeas.cta.h1.split(' ').join('\n');
